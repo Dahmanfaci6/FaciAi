@@ -9,6 +9,9 @@ def main(page:Page):
     page.window.width = 360
     page.window.height = 640
     page.rtl = True
+    page.window_full_screen = True
+    page.padding = 0
+    page.appbar = CupertinoAppBar(title="FaciAi")
     
     ac = Column(scroll=ScrollMode.ALWAYS,expand=True)
     
