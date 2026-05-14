@@ -27,7 +27,7 @@ jobs:
       - name: Build Android APK
         run: |
           # --yes automatically accepts Android SDK licenses
-          flet build apk --assets assets --yes
+          flet build apk --yes
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
