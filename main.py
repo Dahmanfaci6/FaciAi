@@ -2,7 +2,7 @@ from flet import *
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="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",
+    api_key="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",
     base_url="https://api.groq.com/openai/v1"
 )
 def main(page:Page):
