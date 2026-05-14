@@ -18,7 +18,7 @@ def main(page:Page):
         ac.controls.append(Row([Icon(icon=Icons.PERSON,color="white"),Text(value=us.value,color="white",)],vertical_alignment=CrossAxisAlignment.START,rtl=True))
     
     def chat(e):
-        a = Text(value="",expand=True,color="white")
+        a = Text(value="",expand=True,color="white",selectable=True)
         ac.controls.append(Row([Icon(icon=Icons.SMART_TOY,color="white"),Container(content=a,border_radius=20,padding=10,bgcolor="#20f4f4f4",blur=Blur(10,10,BlurTileMode.MIRROR),shadow=BoxShadow(1,15,Colors.BLUE_GREY_300,Offset(2,2),BlurStyle.OUTER),expand=True)],vertical_alignment=CrossAxisAlignment.START))
         page.update()
         
