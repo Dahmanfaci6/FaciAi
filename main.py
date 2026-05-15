@@ -30,7 +30,7 @@ def main(page:Page):
         #groq/compound
         try:
             response = client.chat.completions.create(
-                model="llama-3.1-8b-instant",
+                model="groq/compound",
                 messages=messages,
             )
             
