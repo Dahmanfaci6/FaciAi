@@ -1,10 +1,6 @@
 from flet import *
-from openai import OpenAI
+import ollama
 
-client = OpenAI(
-    api_key="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",
-    base_url="https://api.groq.com/openai/v1"
-)
 def main(page:Page):
     page.window.width = 360
     page.window.height = 640
@@ -27,10 +23,10 @@ def main(page:Page):
         user_input = us.value
         
         messages.append({"role": "user", "content": user_input})
-        #groq/compound
+        #gemma3:1b/compound
         try:
-            response = client.chat.completions.create(
-                model="groq/compound",
+            response = ollama.chat(
+                model="gemma3:1b",
                 messages=messages,
             )
             
