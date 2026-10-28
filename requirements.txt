@@ -1,2 +1,4 @@
+threading
+requests
+pyttsx3
 flet
-openai
